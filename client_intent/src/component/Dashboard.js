@@ -16,7 +16,7 @@ class Dashboard extends PureComponent {
         }
     }
     componentDidMount() {
-        axios.get('http://localhost:5001/task-870cf/us-central1/api/intent')
+        axios.get('https://hv1l385fd8.execute-api.ap-south-1.amazonaws.com/dev')
             .then(res => {
                 this.setState({
                     intent: res.data
